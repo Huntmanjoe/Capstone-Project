@@ -1,12 +1,14 @@
 # Standard library imports
 
 # Remote library imports
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
+
+
 
 # Local imports
 
@@ -15,6 +17,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
+app.secret_key = 'huntmanjoe'
+
 
 # Define metadata, instantiate db
 metadata = MetaData(naming_convention={

@@ -5,3 +5,145 @@
   --text: hsla(0, 0%, 100%, 0.88);
 }
 
+.site-title {
+  font-size: 2rem;
+  color: #ffef5ecb; 
+  text-shadow: 1px 1px 2px #000;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.navbar {
+  background-color: #333; 
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none; 
+  margin-right: 20px;
+  padding: 10px 15px;
+}
+
+.navbar-nav a.active {
+  border-bottom: 2px solid #5e9cff;
+}
+
+.navbar-nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px; 
+  padding: 10px 15px; 
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  
+  .navbar-nav a, .navbar-nav button {
+    width: 100%;
+    text-align: left; 
+  }
+}
+
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px; 
+  font-family: Arial, sans-serif; 
+  margin-bottom: 60px; 
+}
+
+.main-content {
+  padding: 20px; 
+}
+
+
+a, button {
+  color: #bb86fc; 
+}
+
+
+a:hover, button:hover {
+  color: #e0e0e0; 
+}
+
+.active {
+  color: #e0e0e0;
+  border-bottom: 2px solid #bb86fc; 
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff; 
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.main-content {
+  padding: 20px;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #333;
+  color: #fff;
+  border-top: 3px solid #333;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 60px; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+
+
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-link {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
